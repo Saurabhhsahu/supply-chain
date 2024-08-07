@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import RecordCard from './RecordCard';
-import record from './record.json';
 import SelectOpt from './SelectOpt';
 import TextField from '@mui/material/TextField';
 
 function Record() {
   const [status, setStatus] = useState("All");
   const [search,setSearch] = useState('');
+  const [record,setRecord] = useState([]);
 
   // Filter records based on selected status
   const filteredRecords = record.filter((rec) => {
@@ -18,6 +18,23 @@ function Record() {
     // Filter records based on the selected status
     return (rec.status.toLowerCase() === status.toLowerCase()) && (rec.orderId.toLowerCase().includes(search.toLowerCase()) || search == "");
   });
+
+  useEffect((() => {
+    const fetchData = async() => {
+      try {
+        const response = await fetch('http://192.168.60.90:8080/orders');
+        const currRecord = await response.json();
+        console.log(currRecord);
+        
+        setRecord(currRecord);
+      } 
+      catch (error) {
+        console.error('Error fetching the data', error);
+      }
+    };
+
+    fetchData();
+  }),[])
 
   return (
     <div>
@@ -33,7 +50,6 @@ function Record() {
         />
       </div>
       <div className='flex flex-wrap'>
-        {/* Map through filtered records and pass each record to RecordCard */}
         {filteredRecords.map((rec, index) => (
           <RecordCard key={index} record={rec}/>
         ))}

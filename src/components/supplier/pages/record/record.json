@@ -1,11 +1,21 @@
 [
     {
+      "orderId": "ORD008", //in the card
+      "from": "Warehouse G", // in the card
+      "to": "Store Y", // in the card
+      "deliveryPerson": "Sarah Lee", 
+      "orderDate": "fefe", // in the card
+      "orderItems":["efewf "], // in the card
+      "deliveryDate":"fwf",
+      "expectedDeliveryDate": "2024-08-12", 
+      "status": "Dispatched" // in the card
+    },
+    {
       "orderId": "ORD001",
       "from": "Warehouse A",
       "to": "Store X",
       "deliveryPerson": "John Doe",
       "expectedDeliveryDate": "2024-08-10",
-      "priority": "High",
       "status": "In Transit"
     },
     {
@@ -14,7 +24,6 @@
       "to": "Store Y",
       "deliveryPerson": "Jane Smith",
       "expectedDeliveryDate": "2024-08-12",
-      "priority": "Medium",
       "status": "Dispatched"
     },
     {
@@ -23,7 +32,6 @@
       "to": "Store Z",
       "deliveryPerson": "Tom Brown",
       "expectedDeliveryDate": "2024-08-15",
-      "priority": "Low",
       "status": "Pending"
     },
     {
@@ -32,7 +40,6 @@
       "to": "Store X",
       "deliveryPerson": "Alice Johnson",
       "expectedDeliveryDate": "2024-08-11",
-      "priority": "High",
       "status": "In Transit"
     },
     {
@@ -41,7 +48,6 @@
       "to": "Store Y",
       "deliveryPerson": "David Williams",
       "expectedDeliveryDate": "2024-08-13",
-      "priority": "Medium",
       "status": "Dispatched"
     },
     {
@@ -50,7 +56,6 @@
       "to": "Store Z",
       "deliveryPerson": "Emma Davis",
       "expectedDeliveryDate": "2024-08-16",
-      "priority": "Low",
       "status": "Pending"
     },
     {
@@ -59,17 +64,7 @@
       "to": "Store X",
       "deliveryPerson": "Michael Wilson",
       "expectedDeliveryDate": "2024-08-10",
-      "priority": "High",
       "status": "In Transit"
-    },
-    {
-      "orderId": "ORD008",
-      "from": "Warehouse G",
-      "to": "Store Y",
-      "deliveryPerson": "Sarah Lee",
-      "expectedDeliveryDate": "2024-08-12",
-      "priority": "Medium",
-      "status": "Dispatched"
     },
     {
       "orderId": "ORD009",
@@ -77,7 +72,6 @@
       "to": "Store Z",
       "deliveryPerson": "Daniel Martin",
       "expectedDeliveryDate": "2024-08-15",
-      "priority": "Low",
       "status": "Pending"
     },
     {
@@ -86,7 +80,6 @@
       "to": "Store X",
       "deliveryPerson": "Laura Garcia",
       "expectedDeliveryDate": "2024-08-11",
-      "priority": "High",
       "status": "In Transit"
     }
   ]

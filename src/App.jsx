@@ -8,7 +8,7 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 
 export default function App() {
-  return (
+  return (  
     // <Store/>
       <div>
         <header>
@@ -16,13 +16,11 @@ export default function App() {
             <div className="bg-black h-screen flex justify-center items-center ">
               <Box className="w-[300px] bg-gray-100">
                 <div>
-                <Button variant="contained" className="rounded-none w-[50%]">Contained</Button>
-                <Button variant="contained" className="rounded-none w-[50%]">Contained</Button>
+                <Button variant="contained" className="rounded-none w-[50%]">Supplier Login</Button>
+                <Button variant="contained" className="rounded-none w-[50%]">Retailer Login</Button>
                 </div>
-                <div className="m-2 text-center">
-                  
-                    <SignInButton />
-                  
+                <div className="m-2 text-center"> 
+                  <SignInButton />  
                 </div>
               </Box>
               </div>
