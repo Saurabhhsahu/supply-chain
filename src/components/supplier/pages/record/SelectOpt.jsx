@@ -11,7 +11,7 @@ export default function SelectOpt({ status, setStatus }) {
   };
 
   return (
-    <Box className="p-4 max-w-sm mx-auto bg-white rounded-lg shadow-md">
+    <Box className="p-4 w-1/3 sm:w-[300px] min-w-[150px]  bg-white rounded-lg shadow-md my-2">
       <FormControl fullWidth>
         <InputLabel id="status-select-label">Status</InputLabel>
         <Select
