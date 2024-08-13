@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import data from './storeData.json'; // Assuming data is imported from a JSON file
+import { MdCancel } from "react-icons/md";
 
 function Store() {
   const [searchStore, setSearchTerm] = useState('');
@@ -53,13 +54,9 @@ function Store() {
         ref={divRef}
         className={`w-[300px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 bg-gray-200 ${!clicked ? 'hidden' : ''}`}
       >
-        <button 
-          className='absolute top-2 right-2'
-          onClick={() => setClicked(false)}
-        >
-          X
-        </button>
-        <div className='flex flex-col bg-gray-400 p-4 shadow-md text-center min-h-[200px]'>
+        <MdCancel className='absolute top-2 right-2 cursor-pointer text-3xl' onClick={() => setClicked(false)} />
+
+        <div className='flex flex-col p-4 shadow-md text-center min-h-[200px] rounded-xl bg-gradient-to-r from-[#e0e5ec] via-[#a8b4c3] to-[#e0e5ec] p-6 rounded-lg shadow-md transition-all duration-300 hover:from-[#c0c9d1] hover:via-[#8a9ba9] hover:to-[#c0c9d1]'>
           <h2 className='text-lg font-semibold'>{clickedStore.store_name}</h2>
           <p><strong>Store ID:</strong> {clickedStore.store_id}</p>
           <p><strong>Location:</strong> {clickedStore.location}</p>
@@ -86,7 +83,7 @@ function Store() {
               onClick={() => handleClick(store.store_id)}
               className='w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-2'
             >
-              <div className='flex flex-col bg-gray-200 p-4 rounded-md shadow-md min-h-[200px] cursor-pointer hover:bg-gray-300'>
+              <div className='flex flex-col p-4 rounded-md shadow-md min-h-[200px] cursor-pointer bg-gradient-to-r from-[#e0e5ec] via-[#a8b4c3] to-[#e0e5ec] p-6 rounded-lg shadow-md transition-all duration-300 hover:from-[#c0c9d1] hover:via-[#8a9ba9] hover:to-[#c0c9d1]'>
                 <h2 className='text-lg font-semibold text-center'>{store.store_name}</h2>
                 <p><strong>Store ID:</strong> {store.store_id}</p>
                 <p><strong>Location:</strong> {store.location}</p>

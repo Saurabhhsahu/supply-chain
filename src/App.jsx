@@ -9,7 +9,6 @@ import Button from '@mui/material/Button';
 import  {ReactComponent as Warehouse } from './assets/warehouse-icon.svg'
 import chatBotIcon from './assets/chatBot.svg';
 
-
 export default function App() {
   return (  
     // <Store/>

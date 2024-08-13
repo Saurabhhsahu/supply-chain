@@ -1,14 +1,14 @@
 [
     {
-      "orderId": "ORD008", //in the card
-      "from": "Warehouse G", // in the card
-      "to": "Store Y", // in the card
+      "orderId": "ORD008", 
+      "from": "Warehouse G",
+      "to": "Store Y", 
       "deliveryPerson": "Sarah Lee", 
-      "orderDate": "fefe", // in the card
-      "orderItems":["efewf "], // in the card
+      "orderDate": "fefe", 
+      "orderItems":["efewf "],
       "deliveryDate":"fwf",
       "expectedDeliveryDate": "2024-08-12", 
-      "status": "Dispatched" // in the card
+      "status": "Dispatched" 
     },
     {
       "orderId": "ORD001",
