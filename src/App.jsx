@@ -7,6 +7,7 @@ import Record from "./components/supplier/pages/record/Record";
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import chatBotIcon from './assets/chatBot.svg';
+import DashBaord from "./components/supplier/pages/dashboard/DashBaord";
 
 export default function App() {
   return (  
@@ -57,10 +58,9 @@ export default function App() {
           <img src={chatBotIcon} alt="ChatBot" />
         </div>
 
-
         <main>
           <Routes>
-            <Route path="./" element={<App/>}/>
+            <Route path="/" element={<DashBaord/>}/>
             <Route path="/inventory" element={<Inventory />} />
             <Route path="/store" element={<Store />} />
             <Route path="/record" element={<Record />} />
