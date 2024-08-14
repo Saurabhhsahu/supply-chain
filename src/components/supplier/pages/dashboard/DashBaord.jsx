@@ -10,7 +10,7 @@ import AccordionDash from './AccordionDash';
 
 function DashBaord() {
   return (
-    <div className='p-4'>
+    <div className='p-4 bg-[#C9D1F3]'>
         <Grid container spacing={2}>
             <Grid item xs={8}>
             <Card sx={{ height: 60 + "vh" }}>
