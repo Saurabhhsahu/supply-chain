@@ -73,7 +73,7 @@ export default function App() {
           </div>
         </SignedIn>
       </header>
-      <div className="fixed right-[30px] bottom-[50px] cursor-pointer bg-gray-500 p-2 rounded-[40px]">
+      <div className="fixed right-[30px] bottom-[50px] cursor-pointer bg-gray-500 p-2 rounded-[40px] z-50">
         <img src={chatBotIcon} alt="ChatBot" />
       </div>
 

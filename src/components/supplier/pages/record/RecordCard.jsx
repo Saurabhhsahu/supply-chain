@@ -24,7 +24,7 @@ export default function RecordCard({ record }) {
 
   return (
     <Box className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-2">
-      <Card className="bg-gray-500 shadow-lg border border-gray-300 cursor-pointer bg-gradient-to-r from-[#f0f4f8] via-[#d8e1ec] to-[#f0f4f8] p-6 rounded-lg shadow-md transition-all duration-300 hover:from-[#e6edf5] hover:via-[#c8d4e1] hover:to-[#e6edf5]">
+      <Card className="bg-gray-500 shadow-lg border border-gray-300 cursor-pointer bg-gradient-to-r from-[#f0f4f8] via-[#b3c6d4] to-[#f0f4f8] p-6 rounded-lg shadow-md transition-all duration-300 hover:from-[#e6edf5] hover:via-[#a2b5c3] hover:to-[#e6edf5]">
         <CardContent >
           <Typography variant="h5" component="div" className='text-center'>
             {record.orderId}
@@ -45,11 +45,16 @@ export default function RecordCard({ record }) {
               ))}
             </Typography>
           </div>
-  <div className="mt-8"> 
-    <Typography variant="body2" className='bg-blue-500 hover:bg-blue-600 text-center text-white font-semibold py-2 px-4 rounded-md shadow-lg transition-all duration-300'>
-    {record.status}
-          </Typography>
-  </div>            
+          <div className="mt-6"> 
+            <Typography variant="body2" className='bg-blue-500 hover:bg-blue-600 text-center text-white font-semibold py-2 px-4 rounded-md shadow-lg transition-all duration-300'>
+            {record.status}
+                  </Typography>
+          </div>   
+          <div className="mt-4"> 
+            <Typography variant="body2" className='bg-red-500 hover:bg-red-400 text-center text-white font-semibold py-2 px-4 rounded-md shadow-lg transition-all duration-300'>
+            Track
+            </Typography>
+          </div>          
         </CardContent>
       </Card>
     </Box>
