@@ -38,8 +38,8 @@ function Record() {
   // }),[])
 
   return (
-    <div>
-      <div className="flex flex-wrap items-center justify-between p-3 bg-[#C9D1F3]">
+    <div className='min-h-screen bg-[#C9D1F3]'>
+      <div className="flex flex-wrap items-center justify-between p-3 ">
         <SelectOpt status={status} setStatus={setStatus} />
         <TextField 
           className='bg-white border border-[#C9D1F3] rounded-lg]'
