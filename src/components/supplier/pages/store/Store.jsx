@@ -43,7 +43,7 @@ function Store() {
   const clickedStore = data.find(store => store.store_id === storeId) || {};
 
   return (
-    <div>
+    <div className='bg-[#C9D1F3]'>
       {clicked && (
         <div
           ref={overlayRef}

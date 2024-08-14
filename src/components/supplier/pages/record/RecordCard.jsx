@@ -5,7 +5,9 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 
 export default function RecordCard({ record }) {
-  const orderedItems = record.orderItem;
+  const orderedItems = record.orderItems;
+  console.log(orderedItems);
+  
   let size = 0;
   const fixed = 40;
 
@@ -22,20 +24,20 @@ export default function RecordCard({ record }) {
 
   return (
     <Box className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-2">
-      <Card className="bg-gray-500 shadow-lg border border-gray-300 cursor-pointer">
+      <Card className="bg-gray-500 shadow-lg border border-gray-300 cursor-pointer bg-gradient-to-r from-[#e0e5ec] via-[#a8b4c3] to-[#e0e5ec] p-6 rounded-lg shadow-md transition-all duration-300 hover:from-[#c0c9d1] hover:via-[#8a9ba9] hover:to-[#c0c9d1]">
         <CardContent >
           <Typography variant="h5" component="div" className='text-center'>
             {record.orderId}
           </Typography>
-          <Typography variant='h6' className="mb-1.5 text-gray-600">
+          <Typography variant='h6' className="mb-1.5 text-center">
             {record.source} - {record.destination}
           </Typography>
           <Typography variant="body2">
-            Order Date: {record.orderDate}
+            <strong>Order Date:</strong> {record.orderDate}
           </Typography>
           <div>
             <Typography variant="body2" component="div" className='flex' >
-              Ordered Items : 
+              <strong>Ordered Items : </strong>
               {filteredItems.map((item, index) => (
                 <Typography key={index} variant="body2">
                   {item},
@@ -44,7 +46,7 @@ export default function RecordCard({ record }) {
             </Typography>
           </div>
   <div className="mt-8"> 
-    <Typography variant="body2" className='justify-center bg-red-300 py-1 px-2 rounded-md border text-center mx-auto cursor-pointer'>
+    <Typography variant="body2" className='bg-blue-500 hover:bg-blue-600 text-center text-white font-semibold py-2 px-4 rounded-md shadow-lg transition-all duration-300'>
     {record.status}
           </Typography>
   </div>            

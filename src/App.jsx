@@ -6,7 +6,6 @@ import Store from "./components/supplier/pages/store/Store";
 import Record from "./components/supplier/pages/record/Record";
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-import  {ReactComponent as Warehouse } from './assets/warehouse-icon.svg'
 import chatBotIcon from './assets/chatBot.svg';
 
 export default function App() {
@@ -28,9 +27,9 @@ export default function App() {
               </div>
           </SignedOut>
           <SignedIn>
-            <div className="flex flex-col md:flex-row items-center justify-between p-4 bg-gray-500">
+            <div className="flex flex-col md:flex-row items-center justify-between p-4 bg-[#263238] text-white ">
               <div className="logo">
-                <Warehouse className='w-[40px] h-[40px]'/>
+                <div className="text-[30px]">Least</div>
               </div>
 
               <div className="flex gap-8">

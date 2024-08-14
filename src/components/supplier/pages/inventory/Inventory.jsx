@@ -29,7 +29,7 @@ function Inventory() {
   );
 
   return (
-    <div className='p-4 bg-[#eceff1]'>
+    <div className='p-4 bg-[#C9D1F3]'>
       <div className='flex justify-between items-center mb-4'>
         <h1 className='text-xl font-bold'>Inventory</h1>
         <input
