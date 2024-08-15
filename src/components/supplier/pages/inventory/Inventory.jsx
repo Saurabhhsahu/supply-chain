@@ -47,17 +47,17 @@ function Inventory() {
             key={index}
             className='w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-2'
           >
-            <div className='p-4 rounded-md shadow-md text-center cursor-pointer bg-gradient-to-r from-[#f0f4f8] via-[#b3c6d4] to-[#f0f4f8] p-6 rounded-lg shadow-md transition-all duration-300 hover:from-[#e6edf5] hover:via-[#a2b5c3] hover:to-[#e6edf5]'>
+            <div className='p-4 rounded-md shadow-md  cursor-pointer bg-gradient-to-r from-[#f0f4f8] via-[#b3c6d4] to-[#f0f4f8] p-6 rounded-lg shadow-md transition-all duration-300 hover:from-[#e6edf5] hover:via-[#a2b5c3] hover:to-[#e6edf5]'>
               <div className='flex justify-center items-center mb-4'>
                 {/* <DummySvg className='w-full h-[100px]' /> */}
-                <img src={product.img} alt="image" className='h-[200px] w-full' />
+                <img src={product.img} alt="image" className='h-[200px] w-full rounded-md' />
               </div>
-              <h2 className='text-lg font-semibold'>{product.name}</h2>
-              <p>Product ID: {product.productId}</p>
-              <p>Price: ${product.price}</p>
-              <p>Quantity: {product.quantity}</p>
-              <p>Manufacturing Date: {product.mfgDate}</p>
-              <p>Expiry Date: {product.expiryDate}</p>
+              <h2 className='text-lg font-semibold text-center'>{product.name}</h2>
+              <p><strong>Product ID:</strong> {product.productId}</p>
+              <p><strong>Price:</strong> ${product.price}</p>
+              <p><strong>Quantity:</strong> {product.quantity}</p>
+              <p><strong>Manufacturing Date:</strong> {product.mfgDate}</p>
+              <p><strong>Expiry Date:</strong> {product.expiryDate}</p>
             </div>
           </div>
         ))}
