@@ -49,7 +49,8 @@ function Inventory() {
           >
             <div className='p-4 rounded-md shadow-md text-center cursor-pointer  bg-gradient-to-r from-[#f0f4f8] via-[#d8e1ec] to-[#f0f4f8] p-6 rounded-lg shadow-md transition-all duration-300 hover:from-[#e6edf5] hover:via-[#c8d4e1] hover:to-[#e6edf5]'>
               <div className='flex justify-center items-center mb-4'>
-                <DummySvg className='w-full h-[100px]' />
+                {/* <DummySvg className='w-full h-[100px]' /> */}
+                <img src={product.img} alt="image" className='h-[200px] w-full' />
               </div>
               <h2 className='text-lg font-semibold'>{product.name}</h2>
               <p>Product ID: {product.productId}</p>
