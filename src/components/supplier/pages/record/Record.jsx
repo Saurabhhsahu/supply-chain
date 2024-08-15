@@ -51,7 +51,7 @@ function Record() {
           }
         />
       </div>
-      <div className='flex flex-wrap bg-[#C9D1F3]'>
+      <div className='flex flex-wrap bg-[#C9D1F3] p-6'>
         {filteredRecords.map((rec, index) => (
           <RecordCard key={index} record={rec}/>
         ))}
